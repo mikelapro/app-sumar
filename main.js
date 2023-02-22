@@ -1,4 +1,4 @@
-import './src/app1/index.js';
+import './src/app-sumar/index.js';
 import './style.css';
 
 /*

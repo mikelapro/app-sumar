@@ -14,28 +14,28 @@
 <body>
     <div id="app">
         <div class="container mt-5 p-3">
-            <h1>Sumar</h1>
+            <h1 class="display-4">Sumar</h1>
 
-            <h3>Número 1</h3>
-            <input id="input-1" type="text"><br><br>
+            <label for="input" class="form-label">Número 1</label>
+            <input id="input-1" class="form-control form-control-sm" type="text">
+            <br>
 
-            <h3>Número 2</h3>
-            <input id="input-2" type="text"><br><br>
+            <label for="input" class="form-label">Número 2</label>
+            <input id="input-2" class="form-control form-control-sm" type="text">
+            <br>
 
-            <!-- p -->
+            <button id="button-sumar" type="button" class="btn btn-primary">Sumar</button>
+            <button id="button-limpiar" type="button" class="btn btn-secondary">Limpiar</button>
 
-            <button id="button-sumar" type="button" class="btn btn-primary">Sumar</button><br><br>
-            <button type="button-limpiar" class="btn btn-primary">Limpiar</button><br><br>
+            <h6 class="mt-2">Resultado</h6>
 
-            <h3>Resultado</h3><br>
+            <label id="label-resultado" class="alert alert-info" role="alert" style="display: block;">10</label>
+            <div id="mensaje-error" class="alert alert-danger" role="alert" style="display: none;"></div>
 
         </div>
     </div>
 
     <script type="module" src="/main.js"></script>
-    <script type="module" src="./src/app1/usecases/validar-controles.js"></script>
-    <script type="module" src="./src/app1/usecases/sumar.js"></script>
-    <script type="module" src="./src/app1/usecases/limpiar-formulario.js"></script>
 
     <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
