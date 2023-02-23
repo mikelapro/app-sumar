@@ -2,3 +2,5 @@
 // de uso, solo se importe este módulo.
 // export { sumar } from './usecases/sumar.js';
 export { checkApp } from './check-app.js';
+export { sumar } from './sumar.js';
+export { limpiarFormulario } from './limpiar-formulario.js';
