@@ -29,6 +29,7 @@ buttonSumar.addEventListener('click', () => {
 });
 
 buttonlimpiarFormulario.addEventListener('click', () => {
-    limpiarFormulario();
+
+    limpiarFormulario( inputNumero1, inputNumero2, labelResultado, buttonlimpiarFormulario, buttonSumar, divMensajeError );
 
 });
