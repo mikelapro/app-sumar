@@ -21,6 +21,7 @@ buttonSumar.addEventListener('click', () => {
         let resultado = sumar( valorNumero1, valorNumero2 );
 
         labelResultado.innerText = resultado;
+        labelResultado.style.display = 'block';
         buttonSumar.disabled = true;
 
     } else{
