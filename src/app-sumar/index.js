@@ -13,24 +13,31 @@ const labelResultado = document.querySelector('#label-resultado');
 
 // Eventos.
 buttonSumar.addEventListener('click', () => {
-    let valorNumero1 = parseInt(inputNumero1.value);
-    let valorNumero2 = parseInt(inputNumero2.value);
+    let valorNumero1 = inputNumero1.value; 
+    let valorNumero2 = inputNumero2.value;
 
     if ( validarControles( valorNumero1, valorNumero2, divMensajeError ) == true ) {
         // Controles ok.
         let resultado = sumar( valorNumero1, valorNumero2 );
-
+        
         labelResultado.innerText = resultado;
         labelResultado.style.display = 'block';
+        divMensajeError.style.display = 'none';
         buttonSumar.disabled = true;
-
+        buttonlimpiarFormulario.disabled = false;
+        
     } else{
-
+        
     }
 });
 
 buttonlimpiarFormulario.addEventListener('click', () => {
-
-    limpiarFormulario( inputNumero1, inputNumero2, labelResultado, buttonSumar, divMensajeError );
-
+    limpiarFormulario( 
+        inputNumero1,   
+        inputNumero2, 
+        labelResultado, 
+        buttonSumar, 
+        divMensajeError, 
+        buttonlimpiarFormulario );
+    
 });
