@@ -30,6 +30,6 @@ buttonSumar.addEventListener('click', () => {
 
 buttonlimpiarFormulario.addEventListener('click', () => {
 
-    limpiarFormulario( inputNumero1, inputNumero2, labelResultado, buttonlimpiarFormulario, buttonSumar, divMensajeError );
+    limpiarFormulario( inputNumero1, inputNumero2, labelResultado, buttonSumar, divMensajeError );
 
 });
