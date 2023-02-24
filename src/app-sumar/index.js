@@ -1,4 +1,4 @@
-import { checkApp, sumar, limpiarFormulario } from './usecases/index.js';
+import { checkApp, sumar, limpiarFormulario, validarControles } from './usecases/index.js';
 
 checkApp();
 
@@ -13,8 +13,19 @@ const labelResultado = document.querySelector('#label-resultado');
 
 // Eventos.
 buttonSumar.addEventListener('click', () => {
-    sumar();
+    let valorNumero1 = parseInt(inputNumero1.value);
+    let valorNumero2 = parseInt(inputNumero2.value);
 
+    if ( validarControles( valorNumero1, valorNumero2, divMensajeError ) == true ) {
+        // Controles ok.
+        let resultado = sumar( valorNumero1, valorNumero2 );
+
+        labelResultado.innerText = resultado;
+        buttonSumar.disabled = true;
+
+    } else{
+
+    }
 });
 
 buttonlimpiarFormulario.addEventListener('click', () => {
