@@ -1,14 +1,14 @@
-console.log('Limpiar formulario ok!');
+console.log( 'Limpiar formulario ok!' );
 
-export function limpiarFormulario( 
-    inputNumero1, 
-    inputNumero2, 
-    labelResultado, 
-    buttonSumar, 
-    divMensajeError, 
+export function limpiarFormulario(
+    inputNumero1,
+    inputNumero2,
+    labelResultado,
+    buttonSumar,
+    divMensajeError,
     buttonlimpiarFormulario ) {
 
-    console.log('Button limpiar formulario ok!');
+    console.log( 'Button limpiar formulario ok!' );
 
     inputNumero1.value = '';
     inputNumero2.value = '';
