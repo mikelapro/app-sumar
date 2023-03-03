@@ -8,7 +8,7 @@ export function limpiarFormulario(
     divMensajeError,
     buttonlimpiarFormulario ) {
 
-    console.log('Button limpiar formulario ok!' );
+    console.log( 'Button limpiar formulario ok!' );
 
     inputNumero1.value = '';
     inputNumero2.value = '';

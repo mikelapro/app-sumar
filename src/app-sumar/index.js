@@ -1,4 +1,4 @@
-import { checkApp, sumar, limpiarFormulario, validarControles } from './usecases/index.js';
+import { checkApp, sumar, limpiarFormulario, validarControles, registrarSumas } from './usecases/index.js';
 
 checkApp();
 
@@ -26,8 +26,7 @@ buttonSumar.addEventListener( 'click', () => {
         buttonSumar.disabled = true;
         buttonlimpiarFormulario.disabled = false;
 
-    } else {
-
+        registrarSumas();
     }
 } );
 
