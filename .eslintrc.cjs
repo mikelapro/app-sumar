@@ -18,4 +18,5 @@ module.exports = {
         'semi': ['error', 'always'], // Requiere ;.
         'space-in-parens': ['warn', 'always'] // Espacio entre parentesis.
     }
+
 };
